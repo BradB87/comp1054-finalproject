@@ -1,0 +1,385 @@
+/* topography*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  outline: solid 1px red;*/
+
+}
+
+@font-face {
+    font-family: '2dumbregular';
+    src: url('../images/2Dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background-image: url(../images/william-daigneault-ju3eqN0gl6Y-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+    justify-content: center;
+    justify-items: center;
+    background-color: #222f3e;
+    outline: 2px solid gold;
+    margin: 2rem;
+
+}
+
+h1 {
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    font-family: '2dumbregular', Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: goldenrod;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    font-family: '2dumbregular', Georgia, 'Times New Roman', Times, serif;
+    text-decoration: double underline;
+    color: gold;
+    font-size: 20px;
+    background-color: #576574;
+    outline: 2px dotted gold;
+    margin: 0.5rem;
+    padding: 0.5em;
+
+}
+
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    font-family: '2dumbregular', Georgia, 'Times New Roman', Times, serif;
+    background-color: #576574;
+    outline: 2px solid gold;
+    font-size: 25px;
+    color: gold;
+
+}
+
+ul {
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    color: goldenrod;
+    font-size: 20px;
+    margin: 0.2rem;
+}
+
+li {
+    align-self: center;
+
+}
+
+p {
+    display: block;
+    justify-content: center;
+    padding: 0.5em;
+
+}
+
+.para p::first-line {
+    color: rgba(0, 0, 255);
+
+}
+
+.para p::first-letter {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+}
+
+.para {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    align-content: center;
+    background-color: #222f3e;
+    color: goldenrod;
+    margin: 2rem;
+    margin-left: 2rem;
+    padding-left: 1em;
+    word-spacing: 1.5px;
+    line-height: 1.5;
+
+}
+
+/* footer*/
+footer {
+    background-color: #222f3e;
+    text-align: center;
+
+}
+
+footer p {
+    color: gold;
+    font-weight: 900;
+    font-family: 'Teko', sans-serif;
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+/* images*/
+
+.img {
+    height: 427px;
+    width: 640px;
+
+}
+
+section>.tag {
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    justify-content: center;
+    text-align: center;
+    color: gold;
+    font-size: 15.5px;
+}
+
+/*titles*/
+.title2 {
+    padding: 1rem;
+}
+
+
+.title3 {
+    height: 50px;
+    align-self: center;
+    margin: 0.5em;
+}
+
+.title4 {
+    align-items: center;
+    height: 50px;
+    margin: 0.5em;
+}
+
+/*lists*/
+
+.list1 {
+    list-style-position: outside;
+    list-style-type: circle;
+    font-size: 20px;
+    color: gold;
+    line-height: 1;
+    text-align: center;
+}
+
+.list2 {
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+    line-height: 2;
+
+
+
+}
+
+/*form*/
+
+div.fs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 55rem;
+    padding: 0.5em;
+}
+
+#form1 {
+    text-align: center;
+    font-size: 20px;
+    background-color: #222f3e;
+    color: gold;
+}
+
+/*button*/
+button {
+    height: 30px;
+    width: 100px;
+    color: gold;
+    background-color: #576574;
+    align-self: right;
+
+
+}
+
+/*links*/
+.innerlinks {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.link1 {
+    height: 30px;
+    width: 150px;
+    background-color: #222f3e;
+    outline: 4px dotted gold;
+    align-items: center;
+}
+
+.link2 {
+    height: 30px;
+    width: 150px;
+    background-color: #222f3e;
+    outline: 4px dotted gold;
+
+}
+
+/*a effects*/
+a {
+    font-size: 20px
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+    pointer-events: fill;
+
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+/*smartphone media*/
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        overflow: scroll;
+    }
+
+    .sec1 h1 {
+        font-size: 2px;
+    }
+
+    .sect1 p {
+        max-width: 15ch;
+        font-size: 1px;
+        color: goldenrod;
+    }
+
+    .sect3,
+    h2,
+    ul {
+        font-size: 2px;
+        color: goldenrod;
+    }
+
+    .sect4,
+    h3 {
+        font-size: 20px;
+        color: goldenrod;
+    }
+
+    .sect5>h2 {
+
+        font-size: 13px;
+
+    }
+
+    .sect5 .fs {
+        margin-left: 5rem;
+        align-self: center;
+
+    }
+
+    .sect6 button {
+        color: goldenrod;
+
+    }
+
+
+}
+
+@media screen and (max-width: 531px) {
+    .sect1 p {
+        font-size: 16px;
+        color: goldenrod;
+    }
+
+    .sect3,
+    h2,
+    ul {
+        font-size: 19px;
+        color: goldenrod;
+    }
+
+    .sect4,
+    h3 {
+        font-size: 19px;
+        color: goldenrod;
+    }
+
+    .sect5>h2 {
+
+        font-size: 12px;
+
+    }
+
+    .sect5 .fs {
+        margin-left: 9rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .sect5 .fs {
+        margin-left: 14rem;
+    }
+}
+
+/* Responsive Typography */
+html {
+
+    font-size: clamp(1rem, 0.75rem + 1vw, 1rem);
+    /*line height*/
+    line-height: 1.6;
+}
+
+/* Responsive Images  */
+img {
+    max-inline-size: 100%;
+    height: auto;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
